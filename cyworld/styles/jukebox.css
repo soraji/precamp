@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 20px 20px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper__header {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.title {
+  font-size: 13px;
+  color: #55b2e4;
+  font-weight: 700;
+}
+.subtitle {
+  font-size: 8px;
+  margin-left: 10px;
+}
+.divideLine {
+  width: 100%;
+  border-top: 1px solid gray;
+}
+.albumWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+.album {
+  text-align: center;
+}
+.albumTitle {
+  font-size: 11px;
+  font-weight: bold;
+  color: #0f465e;
+  margin-top: 5px;
+}
+.albumSubtitle {
+  font-size: 10px;
+  font-weight: bold;
+  color: #999999;
+  margin-top: 3px;
+}
+.wrapper__body {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+}
+.tableclass {
+  width: 464px;
+  border-collapse: collapse;
+}
+.tableclass th {
+  background-color: #eeeeee;
+  font-size: 10px;
+  font-weight: 700;
+  color: #999999;
+  height: 20px;
+  border-top: 1px solid #999999;
+  border-bottom: 1px solid #999999;
+}
+.tableclass th:nth-child(3),
+.tableclass th:nth-child(4) {
+  text-align: left;
+}
+.tableclass td {
+  border-bottom: 1px dotted #999999;
+  color: #0f465e;
+  font-size: 10px;
+  font-weight: 400;
+  height: 20px;
+}
+.tableclass td:nth-child(1),
+.tableclass td:nth-child(2) {
+  width: 10%;
+  text-align: center;
+  color: black;
+}
+
+.bmgcheck {
+  position: relative;
+}
+
+.bmgcheck input[type='checkbox'] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.bmgcheck input[type='checkbox'] + label {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+.bmgcheck input[type='checkbox'] + label:before {
+  content: ' ';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #999999;
+  vertical-align: middle;
+  background-color: white;
+}
+.bmgcheck input[type='checkbox']:checked + label:before {
+  content: 'V';
+  color: gray;
+  background: #eeeeee;
+  border-color: #999999;
+}

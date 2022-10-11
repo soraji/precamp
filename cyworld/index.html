@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/55a0f36ce7.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>지소라님의 미니홈피 :: 사이좋은 사람들, 싸이월드</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <div class="background">
+      <div class="outerbox">
+        <div class="wrapper">
+          <div class="wrapper__left">
+            <div class="wrapper__left__header">
+              <div class="today">
+                <span>TODAY</span>
+                <span id="today">0</span>
+                <span>| TOTAL</span>
+                <span>12345</span>
+              </div>
+            </div>
+            <div class="wrapper__left__body">
+              <div class="left__body__header">
+                <div class="left__body__header__gray"></div>
+                <div class="left__body__header__line"></div>
+              </div>
+              <div class="left__body__profile">
+                <span>
+                  <i class="fa-regular fa-face-smile-wink"></i> 이름
+                </span>
+
+                <span> <i class="fa-solid fa-phone"></i> Phone </span>
+
+                <span> <i class="fa-solid fa-at"></i> E-mail </span>
+
+                <span> <i class="fa-brands fa-instagram"></i> 인스타그램 </span>
+              </div>
+              <div class="left__body__footer">
+                <div>오늘의 기분</div>
+                <div>
+                  <select class="select">
+                    <option>기쁨 😃</option>
+                    <option>행복 🥰</option>
+                    <option>슬픔 🥺</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper__right">
+            <div class="wrapper__right__header">
+              <div class="right__header__left">사이좋은 사람들, 싸이월드</div>
+              <div class="right__header__right">
+                사생활보호설정 <span class="arrow">▶︎</span>
+              </div>
+            </div>
+            <div class="wrapper__right__body">
+              <iframe
+                src="./home.html"
+                frameborder="0"
+                id="contentFrame"
+              ></iframe>
+            </div>
+          </div>
+          <div class="navigation">
+            <div class="navigation__item" id="menuHome" onclick="menuHome()">
+              홈
+            </div>
+            <div
+              class="navigation__item"
+              id="menuJukebox"
+              onclick="menuJukebox()"
+            >
+              쥬크박스
+            </div>
+            <div class="navigation__item" id="menuGame" onclick="menuGame()">
+              게임
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
